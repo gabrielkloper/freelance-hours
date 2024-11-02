@@ -22,7 +22,7 @@ class ProjectFactory extends Factory
             'description' => fake()->paragraph(),
             'ends_at' => fake()->dateTimeBetween('now', '+ 5 days'),
             'status' => fake()->randomElement(['open', 'closed']),
-            'tech_stack' => fake()->randomElements(['php', 'laravel', 'javascript', 'tailwind', 'vue', 'react', 'python'], random_int(1,5)),
+            'tech_stack' => fake()->randomElements(['nodejs', 'react', 'javascript', 'vite', 'nextjs'], random_int(1,5)),
             'created_by' => User::factory(),
 
         ];
